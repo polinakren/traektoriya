@@ -14,30 +14,38 @@
     <div class="container">
         <header>
             <nav>
-                <img src="assets/logo.svg" alt="logo">
-                <ul>
-                    <li><a href="#">О клубе</a></li>
-                    <li><a href="#">Инструкторы</a></li>
-                    <li><a href="#">Услуги</a></li>
-                    <li><a href="#">Инвентарь</a></li>
-                    <li><a href="#">Фото</a></li>
-                    <li><a href="#">Контакты</a></li>
+                <picture>
+                    <source media="(min-width: 800px)" srcset="assets/logo.svg">
+                    <source media="(max-width: 600px)" srcset="assets/logo-small.svg">
+                    <img src="assets/logo.svg" alt="logo">
+                </picture>
+                <ul class="nav-web">
+                    <li><a href="#about">О клубе</a></li>
+                    <li><a href="#instructors">Инструкторы</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#inventory">Инвентарь</a></li>
+                    <li><a href="#photo">Фото</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
                 </ul>
             </nav>
 
             <h1>Первый клуб стрельбы из лука</h1>
 
             <div class="header-info">
-                <img src="assets/main.svg" alt="main photo">
+                <picture>
+                    <source media="(min-width: 800px)" srcset="assets/main.svg">
+                    <source media="(max-width: 600px)" srcset="assets/mobile-main.svg">
+                    <img src="assets/main.svg" alt="main photo">
+                </picture>
                 <div>
-                    <p>От натяжения тетивы <br> до попадания в цель: ощутите силу и контроль <br> в нашем клубе</p>
+                    <p>От натяжения тетивы <br> до попадания в цель: <br> ощутите силу и контроль <br> в нашем клубе</p>
                     <button class="btn-large btn-black">Забронировать</button>
                 </div>
             </div>
         </header>
 
         <main>
-            <div class="about-block">
+            <div class="about" id="about">
                 <h2>О клубе</h2>
 
                 <div>
@@ -50,61 +58,285 @@
                             <button class="btn-medium btn-white">Узнать цену</button>
                         </div>
                     </div>
-                    <img src="assets/example.svg" alt="Фото лука">
+                    <div class="about-img">
+                        <img src="assets/example.svg" alt="Фото лука">
+                    </div>
                 </div>
             </div>
 
-            <div class="advantages-block">
-                <h3>Наши <br> преимущества</h3>
+            <div class="advantages">
+                <h2>Наши <br> преимущества</h2>
                 <div>
                     <div class="advantages-card">
                         <img src="assets/adv.svg" alt="Профессиональные тренера">
                         <div>
                             <p class="advantages-title">Профессиональные <br> инструкторы</p>
-                            <p>Имеют продвинутое понимание искусства стрельбы</p>
+                            <p class="advantages-desc">Имеют продвинутое понимание искусства стрельбы</p>
                         </div>
                     </div>
                     <div class="advantages-card">
                         <img src="assets/adv.svg" alt="Профессиональные тренера">
                         <div>
                             <p class="advantages-title">Безопасная среда <br> и комфорт</p>
-                            <p>Гарантируем максимальную защиту и безопасное пространство</p>
+                            <p class="advantages-desc">Гарантируем максимальную защиту и безопасное пространство</p>
                         </div>
                     </div>
                     <div class="advantages-card">
                         <img src="assets/adv.svg" alt="Профессиональные тренера">
                         <div>
                             <p class="advantages-title">Большой выбор <br> луков</p>
-                            <p>Каждый найдет именно то, что ему по душе</p>
+                            <p class="advantages-desc">Каждый найдет именно то, что ему по душе</p>
                         </div>
                     </div>
                     <div class="advantages-card">
                         <img src="assets/adv.svg" alt="Профессиональные тренера">
                         <div>
                             <p class="advantages-title">Для всех уровней</p>
-                            <p>Наши занятия разнообразны и адаптируемы, предназначены для участников всех уровней подготовки</p>
+                            <p class="advantages-desc">Наши занятия разнообразны и адаптируемы, предназначены для участников всех уровней подготовки</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="instructors-block">
-                <h3>Инструкторы</h3>
+            <div class="instructors" id="instructors">
+                <h2>Инструкторы</h2>
                 <div>
-                    <div class="instructors">
+                    <div class="instructors-block">
                         <p>Иван Иванов</p>
                         <img src="assets/example.svg" alt="Инструктор">
                     </div>
-                    <div class="instructors">
+                    <div class="instructors-block">
                         <p>Петя Петров</p>
                         <img src="assets/example.svg" alt="Инструктор">
                     </div>
                 </div>
             </div>
 
-            <div class="services-block">
-                <h3>Услуги</h3>
+            <div class="services" id="services">
+                <h2>Услуги</h2>
                 <p class="services-title">Основные сеансы</p>
+                <div class="services-main">
+                    <div class="services-block">
+                        <h4>Для одного человека</h4>
+                        <div class="line"></div>
+                        <div class="services-price">
+                            <div class="price">
+                                <p>30 минут</p>
+                                <p>500 ₽</p>
+                            </div>
+                            <div class="price">
+                                <p>1 час</p>
+                                <p>900 ₽</p>
+                            </div>
+                            <div class="price">
+                                <p>2 часа</p>
+                                <p>1 600 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services-dec">
+                        <img src="assets/girl.svg" alt="girl" class="arrow-add">
+                        <h4>В стоимость входит</h4>
+                    </div>
+                    <div class="services-block">
+                        <h4>Для двух человек</h4>
+                        <div class="line"></div>
+                        <div class="services-price">
+                            <div class="price">
+                                <p>30 минут</p>
+                                <p>950 ₽</p>
+                            </div>
+                            <div class="price">
+                                <p>1 час</p>
+                                <p>1 700 ₽</p>
+                            </div>
+                            <div class="price">
+                                <p>2 часа</p>
+                                <p>3 000 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services-block">
+                        <h4>Для трех человек</h4>
+                        <div class="line"></div>
+                        <div class="services-price">
+                            <div class="price">
+                                <p>30 минут</p>
+                                <p>1 350 ₽</p>
+                            </div>
+                            <div class="price">
+                                <p>1 час</p>
+                                <p>2 400 ₽</p>
+                            </div>
+                            <div class="price">
+                                <p>2 часа</p>
+                                <p>4 300 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services-block">
+                        <h4>Для четырех человек</h4>
+                        <div class="line"></div>
+                        <div class="services-price">
+                            <div class="price">
+                                <p>30 минут</p>
+                                <p>1 700 ₽</p>
+                            </div>
+                            <div class="price">
+                                <p>1 час</p>
+                                <p>3 000 ₽</p>
+                            </div>
+                            <div class="price">
+                                <p>2 часа</p>
+                                <p>5 400 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services-block">
+                        <h4>Для 5-6 человек</h4>
+                        <div class="line"></div>
+                        <div class="services-price">
+                            <div class="price">
+                                <p>30 минут</p>
+                                <p>2 000 ₽</p>
+                            </div>
+                            <div class="price">
+                                <p>1 час</p>
+                                <p>3 600 ₽</p>
+                            </div>
+                            <div class="price">
+                                <p>2 часа</p>
+                                <p>6 400 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="services-title">Дополнительные услуги</p>
+                <div class="services-additional">
+                    <div>
+                        <h4>Блочный лук</h4>
+                        <div class="line"></div>
+                        <div class="additional-price">
+                            <div class="price">
+                                <p>Настройка лука</p>
+                                <p>от 1 200 ₽</p>
+                            </div>
+                            <div class="price">
+                                <p>Установка/замена <br> петли</p>
+                                <p>300 ₽</p>
+                            </div>
+                            <div class="price">
+                                <p>Замена центральной <br> обмотки</p>
+                                <p>300 ₽</p>
+                            </div>
+                            <div class="price">
+                                <p>Выставление пип-сайта</p>
+                                <p>300 ₽</p>
+                            </div>
+                            <div class="price">
+                                <p>Изменение длины <br> натяжения и усилия лука</p>
+                                <p>300 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Классический лук</h4>
+                        <div class="line"></div>
+                        <div class="additional-price">
+                            <div class="price">
+                                <p>Сборка лука</p>
+                                <p>200 ₽</p>
+                            </div>
+                            <div class="price">
+                                <p>Настройка лука <br> с выравниванием плеч</p>
+                                <p>от 500 ₽</p>
+                            </div>
+                            <div class="price">
+                                <p>Замена центральной <br> обмотки</p>
+                                <p>300 ₽</p>
+                            </div>
+                            <div class="price">
+                                <p>Замена полки</p>
+                                <p>100 ₽</p>
+                            </div>
+                            <div class="price">
+                                <p>Изменение длины <br> натяжения и усилия лука</p>
+                                <p>300 ₽</p>
+                            </div>
+                            <div class="price">
+                                <p>Выставление пип-сайта</p>
+                                <p>300 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="independent">
+                <h4>Самостоятельная стрельба со своим инвентарем 1 час 800 ₽</h4>
+            </div>
+
+            <div class="inventory" id="inventory">
+                <h2>Инвентарь</h2>
+                <div>
+                    <div class="inventory-block">
+                        <img src="assets/arrow-ex.svg" alt="лук">
+                        <p class="inventory-title">Тренировочный лук</p>
+                        <p>Стрелять из такого лука легко
+                            и удобно. Подходит как для детей,
+                            так и для девушек</p>
+                    </div>
+                    <div class="inventory-block">
+                        <img src="assets/arrow-ex.svg" alt="лук">
+                        <p class="inventory-title">Классический лук</p>
+                        <p>Пригоден для любителей стрельбы и для соревнований. Сила натяжении 12 кг</p>
+                    </div>
+                    <div class="inventory-block">
+                        <img src="assets/arrow-ex.svg" alt="лук">
+                        <p class="inventory-title">Классический лук</p>
+                        <p>Пригоден для любителей стрельбы и для соревнований. Сила натяжении до 18 кг</p>
+                    </div>
+                    <div class="inventory-block">
+                        <img src="assets/arrow-ex.svg" alt="лук">
+                        <p class="inventory-title">Арбалет</p>
+                        <p>Для профессиональной и развлекательной стрельбы. Сила натяжения нити до 18 кг</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="photo" id="photo">
+                <h2>Фотографии клуба</h2>
+                <div>
+                    <img src="assets/girl.svg" alt="photo">
+                    <img src="assets/girl.svg" alt="photo">
+                    <img src="assets/girl.svg" alt="photo">
+                    <img src="assets/girl.svg" alt="photo">
+                    <img src="assets/girl.svg" alt="photo">
+                    <img src="assets/girl.svg" alt="photo">
+                </div>
+            </div>
+
+            <div class="footer" id="contacts">
+                <div class="footer-info">
+                    <div>
+                        <img src="assets/logo-white.svg" alt="logo-white">
+                        <h6>Как нас найти</h6>
+                        <div class="address">
+                            <p>Г. Калининград, ул. Фрунзе, д. 28 (офис №2)</p>
+                            <p>+7 (952) 796 83 54</p>
+                            <p>traektoriya39@mail.ru</p>
+                        </div>
+                    </div>
+                    <div class="map">
+                        <a href="https://yandex.ru/maps/22/kaliningrad/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0;">Калининград</a>
+                        <a href="https://yandex.ru/maps/22/kaliningrad/house/ulitsa_frunze_28/ZkkYcwVjT0MBQFtufXtwcHRnZg==/?l=trf%2Ctrfe&ll=20.523877%2C54.711934&utm_medium=mapframe&utm_source=maps&z=17" style="color:#eee;font-size:12px;position:absolute;top:14px;">Пробки в Калининграде — Яндекс Карты</a>
+                        <iframe src="https://yandex.ru/map-widget/v1/?l=trf%2Ctrfe&ll=20.523877%2C54.711934&mode=whatshere&whatshere%5Bpoint%5D=20.523877%2C54.711934&whatshere%5Bzoom%5D=17&z=17" width="600" height="456" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <p>2024 Стрелковый клуб ТРАЕКТОРИЯ</p>
+                </div>
             </div>
         </main>
     </div>

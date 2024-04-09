@@ -31,6 +31,7 @@ h1 {
     margin: 0 0 14px 0;
     text-transform: uppercase;
     letter-spacing: -3px;
+    line-height: 115%;
 }
 
 h2 {
@@ -49,6 +50,7 @@ h3 {
 h4 {
     margin: 0;
     font-size: 36px;
+    line-height: 115%;
     text-transform: uppercase;
 }
 
@@ -65,7 +67,7 @@ header a {
     text-transform: uppercase;
 }
 header a:hover {
-    background-color: #000;
+    background-color: #042261;
     color: #fff;
     border-radius: 40px;
 }
@@ -82,7 +84,7 @@ nav {
 }
 
 button {
-    border: 2px solid #000;
+    border: 2px solid #042261;
     border-radius: 40px;
 
     font-size: 16px;
@@ -99,26 +101,26 @@ button {
     padding: 20px 77px;
 }
 .btn-white {
-    color: #000;
+    color: #042261;
     background-color: #fff;
 }
 .btn-white:hover {
-    background-color: #c9c9c9;
+    background-color: #93A3C2;
 }
 .btn-white:active {
-    background-color: #e4e4e4;
+    background-color: #CED9EF;
 }
-.btn-black {
+.btn-blue {
     color: #fff;
-    background-color: #000;
+    background-color: #042261;
 }
-.btn-black:hover {
-    background-color: #2E2E2E;
-    border-color: #2E2E2E;
+.btn-blue:hover {
+    background-color: #214592;
+    border-color: #214592;
 }
-.btn-black:active {
-    background-color: #787878;
-    border-color: #787878;
+.btn-blue:active {
+    background-color: #627CB5;
+    border-color: #627CB5;
 }
 
 .header-info {
@@ -127,22 +129,34 @@ button {
 .header-info img {
     width: 100%;
 }
-.header-info div {
+.header-info .header-desc {
     position: absolute;
-    bottom: 40px;
+    top: 80px;
     left: 56px;
 
     max-width: 500px;
 
     text-align: left;
 }
-.header-info div p {
-    margin-bottom: 24px;
+.header-info .btn-reserve {
+    position: absolute;
+    bottom: 40px;
+    left: 56px;
+}
+.header-info div p:first-child {
     font-size: 32px;
     font-weight: bold;
-    color: #fff;
+    color: #000;
     text-transform: uppercase;
 }
+.header-info div p:last-child {
+    margin-top: 16px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #042261;
+    text-transform: uppercase;
+}
+
 
 .about {
     margin-top: 120px;
@@ -162,6 +176,7 @@ button {
     width: 50%;
 }
 .about-img img {
+    display: block;
     width: 100%;
     height: 100%;
 }
@@ -174,20 +189,23 @@ button {
     align-items: center;
     justify-content: center;
 
-    padding: 120px 35px;
+    padding: 110px 71px;
     border-radius: 40px;
     border: 1px solid #000;
 }
 .about-desc p {
-    margin: 20px 0 36px;
+    margin: 19px 0 56px;
 
     font-size: 20px;
+    line-height: 115%;
     text-transform: uppercase;
 }
 .about-desc h3 {
-    margin-bottom: 20px;
+    margin-bottom: 19px;
 }
-
+.about-desc br {
+    display: none;
+}
 
 .line {
     width: 83px;
@@ -197,8 +215,21 @@ button {
 }
 
 .about-btn {
+    width: 100%;
     display: flex;
     gap: 20px;
+}
+.about-btn button:first-child {
+    width: 50%;
+}
+.about-btn button:last-child {
+    width: 100%;
+}
+.about-btn button {
+    padding: 20px 0;
+}
+.about-btn a {
+    width: 50%;
 }
 
 .advantages {
@@ -228,15 +259,24 @@ button {
 .advantages-desc {
     font-size: 20px;
 }
+.advantages-desc span {
+    display: none;
+}
+.advantages-desc br {
+    display: none;
+}
 
 .advantages-title {
     font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
 }
+.advantages-title br {
+    display: inline;
+}
 
 .instructors {
-    margin-top: 116px;
+    margin-top: 120px;
 }
 
 .instructors img {
@@ -278,7 +318,7 @@ button {
 }
 
 .services-title {
-    margin: 40px 0 56px;
+    margin: 36px 0 56px;
 
     font-size: 48px;
     line-height: 115%;
@@ -287,30 +327,58 @@ button {
 }
 
 .services-block {
-    padding: 80px 50px;
+    padding: 80px 56px;
 
     border-radius: 40px;
     border: 1px solid #000;
 }
 .services-block h4 {
-    margin-bottom: 14px;
+    font-size: 30px;
+    margin-bottom: 12px;
 }
 
 .services-price {
     margin-top: 48px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 14px;
 }
 
 .services-dec {
     position: relative;
 }
-.services-dec h4 {
+.services-dec > div {
     position: absolute;
-    bottom: 40px;
-    left: 56px;
+    top: 40px;
+    left: 50px;
+    right: 50px;
     color: #fff;
+}
+.services-dec h4 {
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+.services-dec p {
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+.services-dec button {
+    margin-top: 20px;
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff;
+}
+.services-dec button:hover {
+    background: rgba(255, 255, 255, 0.6);
+}
+.services-dec button:active {
+    background: rgba(255, 255, 255, 0.4);
+}
+.services-dec img {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    filter: brightness(60%);
 }
 
 .opacity {
@@ -325,7 +393,8 @@ button {
     border-bottom: 1px solid #000;
 }
 .price p {
-    font-size: 24px;
+    font-size: 20px;
+    line-height: 175%;
     text-transform: uppercase;
 }
 
@@ -338,7 +407,7 @@ button {
     width: 50%;
     padding: 120px 56px;
 
-    background-color: #6F7864;
+    background-color: #042261;
     border-radius: 40px;
     color: #fff;
 }
@@ -367,8 +436,12 @@ button {
     padding: 46px;
 
     text-align: center;
-    background-color: #35303A;
-    color: #fff;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+}
+.independent h4 {
+    font-size: 43px;
+    letter-spacing: 1px;
 }
 
 .inventory {
@@ -378,7 +451,7 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
-    margin: 55px 0 120px;
+    margin: 56px 0 120px;
 
     text-align: left;
 }
@@ -388,6 +461,13 @@ button {
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
+}
+.inventory-block img {
+    border: 1px solid #000;
+    border-radius: 40px;
+}
+.inventory-block br {
+    display: inline;
 }
 
 .photo {
@@ -404,20 +484,29 @@ button {
 .photo img {
     width: 100%;
 }
-
+.photo .mobile {
+    display: none;
+}
 
 .footer {
     position: absolute;
     left: 0;
     width: 100%;
-    padding: 56px 30px;
 
-    background-color: #6F7864;
+    display: flex;
+    justify-content: center;
+    padding: 56px 90px;
+
+    background-color: #021A4A;
     color: #fff;
 }
 .footer > div {
+    max-width: 1500px;
+    width: 100%;
+
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
 }
 .footer h6 {
     margin: 56px 0 32px 0;
@@ -443,26 +532,53 @@ button {
     text-transform: uppercase;
 }
 
+.requisites {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 150%;
+    font-weight: 200;
+}
+
 .footer-info {
+    display: flex;
+    justify-content: space-between;
     padding-bottom: 57px;
 }
 
 .footer-social {
     padding-top: 12px;
+    line-height: 150%;
+    font-weight: 200;
     border-top: 1px solid #fff;
 }
 
+.map iframe {
+    height: 100%;
+}
+
 @media screen and (min-width: 320px) and (max-width: 480px) {
+    button {
+        border: 1px solid #042261;
+    }
     .container {
         width: 100%;
         max-width: 320px;
         padding: 20px;
     }
-    .header-info div {
-        bottom: 12px;
-        left: 20px;
+    .header-info .header-desc {
+        top: 20px;
+        left: 16px;
+    }
+    .header-info .btn-reserve {
+        bottom: 10px;
+        left: 16px;
     }
     h1 {
+        margin: 0 0 8px 0;
         font-size: 18px;
         letter-spacing: -1px;
     }
@@ -476,15 +592,18 @@ button {
         font-size: 16px;
     }
     .btn-large, .btn-medium {
-        padding: 8px 17px;
-        font-size: 10px;
+        padding: 10px 23px;
+        font-size: 8px;
     }
     .nav-web {
         display: none;
     }
-    .header-info div p {
-        margin-bottom: 8px;
+    .header-info div p:first-child {
         font-size: 12px;
+    }
+    .header-info div p:last-child {
+        margin-top: 8px;
+        font-size: 8px;
     }
     .about {
         margin-top: 60px;
@@ -494,8 +613,12 @@ button {
         margin-top: 32px;
     }
     .about-desc p {
+        width: 214px;
         margin: 14px 0 20px;
         font-size: 8px;
+    }
+    .about-desc br {
+        display: inline;
     }
     .about-desc {
         width: 100%;
@@ -504,6 +627,27 @@ button {
     }
     .about-btn {
         gap: 8px;
+    }
+    .about-btn button {
+        padding: 10px 0;
+        line-height: 150%;
+    }
+    .about-img img {
+        height: 199px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    .services-dec h4 {
+        margin-bottom: 24px;
+        font-size: 16px;
+    }
+    .services-dec p {
+        margin-bottom: 8px;
+        font-size: 8px;
+    }
+    .services-dec button {
+        width: 100%;
+        margin-top: 10px;
     }
     .line {
         width: 56px;
@@ -526,6 +670,12 @@ button {
         flex-direction: column;
         gap: 14px;
         padding-bottom: 8px;
+    }
+    .advantages-card img {
+        object-fit: cover;
+        height: 183px;
+        width: 100%;
+        border-radius: 20px;
     }
     .advantages-title {
         margin-bottom: 8px;
@@ -551,7 +701,7 @@ button {
         font-size: 16px;
     }
     .services {
-        margin: 60px 0 18px;
+        margin: 60px 0 24px;
     }
     .services-title {
         margin: 12px 0 32px;
@@ -566,48 +716,71 @@ button {
         padding: 40px 20px;
     }
     .services-block h4 {
-        margin-bottom: 8px;
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+    .services-dec > div {
+        width: 240px;
+        top: 40px;
+        left: 20px;
     }
     .services-price {
         margin-top: 32px;
         gap: 8px;
     }
     .price p {
+        line-height: 150%;
         font-size: 12px;
     }
     .services-dec img {
-        width: 100%;
+        border-radius: 20px;
+        object-fit: cover;
+        height: 213px;
     }
     .services-additional {
         flex-direction: column;
     }
     .services-additional > div {
         width: 100%;
-        padding: 20px;
+        padding: 40px 20px;
         border-radius: 20px;
+    }
+    .services-additional h4 {
+        margin-bottom: 6px;
+    }
+    .additional-price {
+        margin-top: 32px;
+        gap: 12px;
     }
     .independent {
         padding: 12px 20px;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
     }
     .independent h4 {
-        font-size: 12px;
+        font-size: 13px;
     }
     .inventory {
-        margin-top: 130px;
+        margin-top: 138px;
     }
     .inventory > div {
         grid-template-columns: 1fr;
         margin: 32px 0 60px;
     }
     .inventory-block img {
+        object-fit: cover;
+        height: 406px;
         width: 100%;
-    }
-    .inventory-title {
-        margin: 14px 0 8px;
-        font-size: 16px;
     }
     .inventory-block p {
         font-size: 14px;
+    }
+    .inventory-block .inventory-title {
+        margin: 14px 0 8px;
+        font-size: 16px;
+    }
+    .photo {
+        margin-bottom: 60px;
     }
     .photo h2 {
         margin-bottom: 32px;
@@ -615,147 +788,229 @@ button {
     .photo div {
         grid-template-columns: 1fr;
     }
+    .photo .mobile {
+        display: block;
+        gap: 12px;
+    }
+    .photo .mobile p {
+        margin-bottom: 12px;
+        padding-top: 8px;
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-top: 1px solid #000;
+    }
+    .photo .mobile button {
+        padding: 8px 22px;
+        font-size: 10px;
+    }
+    .footer {
+        padding: 32px 20px;
+    }
+    .footer h6 {
+        margin: 0 0 12px 0;
+        font-size: 16px;
+    }
+    .footer > div {
+        max-width: 280px;
+        flex-direction: column;
+    }
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 12px;
+    }
+    .footer-info > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .footer-social p {
+        font-size: 8px;
+    }
+    .address {
+        font-size: 8px;
+        gap: 8px;
+    }
+    .requisites {
+        margin-top: 32px;
+        font-size: 8px;
+        line-height: 150%;
+    }
+    .map {
+        margin-top: 24px;
+        height: 200px;
+        border-radius: 20px;
+    }
+    .footer-social {
+        padding-top: 4px;
+    }
 }
 
-@media screen and (min-width: 601px) and (max-width: 1024px) {
+@media screen and (min-width: 601px) and (max-width: 1023px) {
     .container {
         /* для планшетов */
+        background-color: #93A3C2;
     }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
     .container {
         width: 100%;
-        max-width: 864px;
-    }
-    .btn-large {
-        padding: 20px 67px;
-        font-size: 14px;
+        max-width: 1044px;
     }
     header a {
-        font-size: 14px;
+        font-size: 12px;
         padding: 9px 13px;
     }
     h1 {
-        font-size: 50px;
-        letter-spacing: -2px;
+        font-size: 58px;
+        letter-spacing: -1px;
+    }
+    .header-info .header-desc {
+        left: 40px;
     }
     .header-info div p {
         font-size: 22px;
     }
     h3 {
-        font-size: 30px;
+        font-size: 40px;
     }
     h2 {
-        font-size: 45px;
+        font-size: 48px;
     }
     .about {
-        margin-top: 80px;
+        margin-top: 96px;
     }
     .about-desc {
-        padding: 0 35px;
+        padding: 0 40px;
     }
     .about-desc p {
-        font-size: 16px;
+        font-size: 15px;
     }
     .advantages {
-        margin-top: 80px;
+        margin-top: 96px;
     }
-    .btn-medium {
-        padding: 16px 17px;
-        font-size: 14px;
+    .about-btn button {
+        padding: 20px 17px;
+        font-size: 12px;
     }
-    .advantages-desc, .advantages-title {
-        font-size: 14px;
+    .advantages-desc {
+        font-size: 16px;
+    }
+    .advantages-title {
+        font-size: 20px;
+    }
+    .advantages > div {
+        margin-top: 48px;
+    }
+    .advantages-card {
+        gap: 20px;
+        padding-bottom: 14px
+    }
+    .advantages-card img {
+        object-fit: cover;
+        width: 147px;
+        height: 102px;
+        border-radius: 10px;
     }
     .services-dec img {
-        width: 100%;
-        height: 100%;
+        height: 372px;
+        object-fit: cover;
+    }
+    .instructors {
+        margin-top: 96px;
+    }
+    .instructors > div {
+        margin-top: 48px;
     }
     .instructors-block p {
         font-size: 20px;
     }
     .services {
-        margin: 80px 0 53px;
+        margin: 96px 0 52px;
     }
-    .services-title {
-        margin: 20px 0 46px;
-        font-size: 24px;
+    .services-dec h4 {
+        margin-bottom: 48px;
     }
-    .services-main {
-        margin-bottom: 80px;
+    .services-dec button {
+        margin-top: 14px;
+        padding: 17px 70px;
+        font-size: 12px;
     }
-    h4 {
-        font-size: 22px;
-    }
-    .footer h6 {
-        font-size: 20px;
-    }
-    .price p {
+    .services-dec > div {
+        top: 48px;
+        left: 40px;
         font-size: 14px;
     }
+    .services-title {
+        margin: 32px 0 48px;
+        font-size: 36px;
+    }
+    .services-main {
+        margin-bottom: 32px;
+    }
+    .services-price {
+        margin-top: 42px;
+    }
+    h4 {
+        font-size: 36px;
+    }
+    .footer h6 {
+        font-size: 24px;
+    }
+    .price p {
+        font-size: 20px;
+        line-height: 150%;
+    }
     .services-block {
-        padding: 60px 50px;
+        padding: 80px 40px;
     }
     .services-additional > div {
-        padding: 80px 56px;
+        padding: 120px 40px;
+    }
+    .independent {
+        padding: 32px;
+    }
+    .independent h4 {
+        font-size: 30px;
     }
     .inventory {
         margin-top: 254px;
     }
+    .inventory > div {
+        margin: 48px 0 96px;
+    }
     .inventory-block img {
-        width: 85%;
+        object-fit: cover;
+        width: 231px;
+        height: 363px;
     }
     .inventory-block p {
         font-size: 14px;
     }
-    .map iframe {
-        width: 400px;
-        height: 356px;
-    }
-}
-
-@media screen and (min-width: 1281px) and (max-width: 1440px) {
-    .container {
-        background-color: #fff;
-        width: 100%;
-        max-width: 1024px;
-    }
-    h1 {
-        font-size: 60px;
-        letter-spacing: -2px;
-    }
-    .btn-medium {
-        padding: 20px 29px;
-    }
-    .about-desc {
-        padding: 0 35px;
-    }
-    .about-desc p {
-        font-size: 16px;
-    }
-    .advantages-desc, .advantages-title {
-        font-size: 16px;
-    }
-    .services-dec img {
-        width: 100%;
-        height: 100%;
-    }
-    h4 {
-        font-size: 30px;
-    }
-    .price p {
-        font-size: 18px;
-    }
-    .inventory-block img {
-        width: 90%;
+    .inventory-block br {
+        display: contents;
     }
     .inventory-title {
-        font-size: 18px;
+        margin: 18px 0 8px;
+    }
+    .photo h2 {
+        margin-bottom: 48px;
+    }
+    .photo {
+        margin-bottom: 96px;
+    }
+    .footer > div {
+        max-width: 984px;
+    }
+    .map iframe {
+        width: 482px;
     }
 }
 
-@media screen and (min-width: 1441px) and (max-width: 1680px) {
+@media screen and (min-width: 1281px) and (max-width: 1680px) {
     .container {
         width: 100%;
         max-width: 1280px;
@@ -767,16 +1022,53 @@ button {
     .about-desc p {
         line-height: 23px;
     }
+    .advantages-card img {
+        object-fit: cover;
+        width: 195px;
+        height: 120px;
+    }
+    .services-dec img {
+        object-fit: cover;
+        height: 403px;
+    }
+    .independent {
+        padding: 37px;
+    }
+    .independent h4 {
+        font-size: 34px;
+    }
+    .inventory-block img {
+        object-fit: cover;
+        width: 285px;
+        height: 488px;
+    }
+    .map {
+        width: 590px;
+    }
 }
 
-@media (min-width: 1680px) {
+@media (min-width: 1681px) {
     .container {
         width: 100%;
-        max-width: 1628px;
+        max-width: 1560px;
     }
     h1 {
-        font-size: 96px;
-        letter-spacing: -4px;
+        font-size: 86px;
+        letter-spacing: 1px;
+    }
+
+    .advantages-desc span {
+        display: inline;
+    }
+    .advantages-desc br {
+        display: inline;
+    }
+    .advantages-title br {
+        display: none;
+    }
+
+    .inventory-block br {
+        display: none;
     }
 
     .services-main {

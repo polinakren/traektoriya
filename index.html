@@ -33,13 +33,18 @@
 
             <div class="header-info">
                 <picture>
-                    <source media="(min-width: 800px)" srcset="assets/main.svg">
-                    <source media="(max-width: 600px)" srcset="assets/mobile-main.svg">
+                    <source media="(min-width: 1680px)" srcset="assets/main.svg">
+                    <source media="(min-width: 1280px)" srcset="assets/main1280.svg">
+                    <source media="(min-width: 1024px)" srcset="assets/main2.svg">
+                    <source media="(max-width: 600px)" srcset="assets/main-small.svg">
                     <img src="assets/main.svg" alt="main photo">
                 </picture>
-                <div>
-                    <p>От натяжения тетивы <br> до попадания в цель: <br> ощутите силу и контроль <br> в нашем клубе</p>
-                    <button class="btn-large btn-black">Забронировать</button>
+                <div class="header-desc">
+                    <p>От натяжения тетивы <br> до попадания в цель</p>
+                    <p>Ощутите силу и контроль <br> в нашем клубе</p>
+                </div>
+                <div class="btn-reserve">
+                    <button class="btn-large btn-blue">Забронировать</button>
                 </div>
             </div>
         </header>
@@ -52,14 +57,17 @@
                     <div class="about-desc">
                         <h3>Траектория</h3>
                         <div class="line"></div>
-                        <p>Наши двери открыты для любителей лука и арбалета, а также для новичков, желающих стать мастерами стрельбы</p>
+                        <p>Наши двери открыты для любителей лука <br> и арбалета, а также для новичков, желающих стать мастерами стрельбы</p>
                         <div class="about-btn">
-                            <button class="btn-medium btn-black">Забронировать</button>
-                            <button class="btn-medium btn-white">Узнать цену</button>
+                            <button class="btn-medium btn-blue">Забронировать</button>
+                            <a href="#services"><button class="btn-medium btn-white">Узнать цену</button></a>
                         </div>
                     </div>
                     <div class="about-img">
-                        <img src="assets/example.svg" alt="Фото лука">
+                        <picture>
+                            <source media="(max-width: 1680px)" srcset="assets/about2.svg">
+                            <img src="assets/about.svg" alt="Фото лука">
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -68,31 +76,35 @@
                 <h2>Наши <br> преимущества</h2>
                 <div>
                     <div class="advantages-card">
-                        <img src="assets/adv.svg" alt="Профессиональные тренера">
+                        <img src="assets/coach.svg" alt="Профессиональные тренера">
                         <div>
-                            <p class="advantages-title">Профессиональные <br> инструкторы</p>
-                            <p class="advantages-desc">Имеют продвинутое понимание искусства стрельбы</p>
+                            <p class="advantages-title">Профессиональные инструкторы</p>
+                            <p class="advantages-desc">Обладают глубокими знаниями о технике <br>
+                                и тактике стрельбы из лука <span>, помогают подобрать правильное оборудование для каждого стрелка, учитывая физические параметры</span></p>
                         </div>
                     </div>
                     <div class="advantages-card">
-                        <img src="assets/adv.svg" alt="Профессиональные тренера">
+                        <img src="assets/safety.svg" alt="Безопасная среда и комфорт">
                         <div>
-                            <p class="advantages-title">Безопасная среда <br> и комфорт</p>
-                            <p class="advantages-desc">Гарантируем максимальную защиту и безопасное пространство</p>
+                            <p class="advantages-title">Безопасная среда и комфорт</p>
+                            <p class="advantages-desc">Соблюдаем строгие правила безопасности <br> во время занятий <span>,
+                                что минимизирует риски несчастных случаев
+                                и травм во время занятий стрельбы из лука </span></p>
                         </div>
                     </div>
                     <div class="advantages-card">
-                        <img src="assets/adv.svg" alt="Профессиональные тренера">
+                        <img src="assets/bows.svg" alt="Большой выбор луков">
                         <div>
                             <p class="advantages-title">Большой выбор <br> луков</p>
-                            <p class="advantages-desc">Каждый найдет именно то, что ему по душе</p>
+                            <p class="advantages-desc">Разнообразие луков позволяет подобрать оптимальный вариант <span>для каждого посетителя нашего клуба. Подходящий лук способствует достижению лучших результатов</span></p>
                         </div>
                     </div>
                     <div class="advantages-card">
-                        <img src="assets/adv.svg" alt="Профессиональные тренера">
+                        <img src="assets/levels.svg" alt="Для всех уровней">
                         <div>
-                            <p class="advantages-title">Для всех уровней</p>
-                            <p class="advantages-desc">Наши занятия разнообразны и адаптируемы, предназначены для участников всех уровней подготовки</p>
+                            <p class="advantages-title">Программа для всех уровней</p>
+                            <p class="advantages-desc">Программа рассчитана на стрелков разных уровней <span> -
+                                от начинающих до опытных. Индивидуальное внимание и подход к каждому посетителю клуба </span></p>
                         </div>
                     </div>
                 </div>
@@ -103,11 +115,17 @@
                 <div>
                     <div class="instructors-block">
                         <p>Иван Иванов</p>
-                        <img src="assets/example.svg" alt="Инструктор">
+                        <picture>
+                            <source media="(max-width: 1680px)" srcset="assets/about2.svg">
+                            <img src="assets/about.svg" alt="Инструктор">
+                        </picture>
                     </div>
                     <div class="instructors-block">
                         <p>Петя Петров</p>
-                        <img src="assets/example.svg" alt="Инструктор">
+                        <picture>
+                            <source media="(max-width: 1680px)" srcset="assets/about2.svg">
+                            <img src="assets/about.svg" alt="Инструктор">
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -134,10 +152,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="services-dec">
-                        <img src="assets/girl.svg" alt="girl" class="arrow-add">
-                        <h4>В стоимость входит</h4>
-                    </div>
                     <div class="services-block">
                         <h4>Для двух человек</h4>
                         <div class="line"></div>
@@ -154,6 +168,16 @@
                                 <p>2 часа</p>
                                 <p>3 000 ₽</p>
                             </div>
+                        </div>
+                    </div>
+                    <div class="services-dec">
+                        <img src="assets/man.svg" alt="man" class="arrow-add">
+                        <div>
+                            <h4>В стоимость входит</h4>
+                            <p>1. Инструктаж (входит в указанное время <br> и занимает 7-10 минут)</p>
+                            <p>2. Прокат инвентаря и необходимых аксессуаров</p>
+                            <p>3. Неограниченное количество выстрелов <br> из рекурсивных луков и арбалетов</p>
+                            <button class="btn-large">Забронировать</button>
                         </div>
                     </div>
                     <div class="services-block">
@@ -281,26 +305,26 @@
                 <h2>Инвентарь</h2>
                 <div>
                     <div class="inventory-block">
-                        <img src="assets/arrow-ex.svg" alt="лук">
+                        <img src="assets/teen.svg" alt="Тренировочный лук">
                         <p class="inventory-title">Тренировочный лук</p>
-                        <p>Стрелять из такого лука легко
+                        <p>Стрелять из такого лука легко <br>
                             и удобно. Подходит как для детей,
                             так и для девушек</p>
                     </div>
                     <div class="inventory-block">
-                        <img src="assets/arrow-ex.svg" alt="лук">
+                        <img src="assets/classic-plastic.svg" alt="Классический лук">
                         <p class="inventory-title">Классический лук</p>
-                        <p>Пригоден для любителей стрельбы и для соревнований. Сила натяжении 12 кг</p>
+                        <p>Пригоден для любителей стрельбы <br> и для соревнований. Сила натяжении 12 кг</p>
                     </div>
                     <div class="inventory-block">
-                        <img src="assets/arrow-ex.svg" alt="лук">
+                        <img src="assets/premium.svg" alt="Классический лук">
                         <p class="inventory-title">Классический лук</p>
-                        <p>Пригоден для любителей стрельбы и для соревнований. Сила натяжении до 18 кг</p>
+                        <p>Пригоден для любителей стрельбы <br> и для соревнований. Сила натяжении до 18 кг</p>
                     </div>
                     <div class="inventory-block">
-                        <img src="assets/arrow-ex.svg" alt="лук">
+                        <img src="assets/crossbow.svg" alt="Арбалет">
                         <p class="inventory-title">Арбалет</p>
-                        <p>Для профессиональной и развлекательной стрельбы. Сила натяжения нити до 18 кг</p>
+                        <p>Для профессиональной <br> и развлекательной стрельбы. Сила натяжения нити до 18 кг</p>
                     </div>
                 </div>
             </div>
@@ -318,24 +342,38 @@
             </div>
 
             <div class="footer" id="contacts">
-                <div class="footer-info">
-                    <div>
-                        <img src="assets/logo-white.svg" alt="logo-white">
-                        <h6>Как нас найти</h6>
-                        <div class="address">
-                            <p>Г. Калининград, ул. Фрунзе, д. 28 (офис №2)</p>
-                            <p>+7 (952) 796 83 54</p>
-                            <p>traektoriya39@mail.ru</p>
+                <div>
+                    <div class="footer-info">
+                        <div>
+                            <picture>
+                                <source media="(min-width: 800px)" srcset="assets/logo-white.svg">
+                                <source media="(max-width: 600px)" srcset="assets/logo-small-white.svg">
+                                <img src="assets/logo-white.svg" alt="logo-white">
+                            </picture>
+                            <div>
+                                <h6>Как нас найти</h6>
+                                <div class="address">
+                                    <p>Г. Калининград, ул. Фрунзе, д. 28 (офис №2)</p>
+                                    <p>+7 (981) 460 51 94</p>
+                                    <p>traektoriya39@mail.ru</p>
+                                </div>
+                                <div class="requisites">
+                                    <p>Ип зименкова полина сергеевна</p>
+                                    <p>Огрип 324390000014818</p>
+                                    <p>Инн 391501142500</p>
+                                    <p>Юр. Адрес: 236004, г. Калининград, Черниговская, д. 19б</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="map">
+                            <a href="https://yandex.ru/maps/22/kaliningrad/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0;">Калининград</a>
+                            <a href="https://yandex.ru/maps/22/kaliningrad/house/ulitsa_frunze_28/ZkkYcwVjT0MBQFtufXtwcHRnZg==/?l=trf%2Ctrfe&ll=20.523877%2C54.711934&utm_medium=mapframe&utm_source=maps&z=17" style="color:#eee;font-size:12px;position:absolute;top:14px;">Пробки в Калининграде — Яндекс Карты</a>
+                            <iframe src="https://yandex.ru/map-widget/v1/?l=trf%2Ctrfe&ll=20.523877%2C54.711934&mode=whatshere&whatshere%5Bpoint%5D=20.523877%2C54.711934&whatshere%5Bzoom%5D=17&z=17" width="710" height="456" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
                         </div>
                     </div>
-                    <div class="map">
-                        <a href="https://yandex.ru/maps/22/kaliningrad/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0;">Калининград</a>
-                        <a href="https://yandex.ru/maps/22/kaliningrad/house/ulitsa_frunze_28/ZkkYcwVjT0MBQFtufXtwcHRnZg==/?l=trf%2Ctrfe&ll=20.523877%2C54.711934&utm_medium=mapframe&utm_source=maps&z=17" style="color:#eee;font-size:12px;position:absolute;top:14px;">Пробки в Калининграде — Яндекс Карты</a>
-                        <iframe src="https://yandex.ru/map-widget/v1/?l=trf%2Ctrfe&ll=20.523877%2C54.711934&mode=whatshere&whatshere%5Bpoint%5D=20.523877%2C54.711934&whatshere%5Bzoom%5D=17&z=17" width="600" height="456" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+                    <div class="footer-social">
+                        <p>2024 Стрелковый клуб ТРАЕКТОРИЯ</p>
                     </div>
-                </div>
-                <div class="footer-social">
-                    <p>2024 Стрелковый клуб ТРАЕКТОРИЯ</p>
                 </div>
             </div>
         </main>

@@ -1,3 +1,75 @@
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -9,6 +81,7 @@ body {
     margin: 0;
 
     font-family: Roboto, sans-serif;
+    background-color: #F8F8FF;
 }
 
 .container {
@@ -52,6 +125,10 @@ h4 {
     font-size: 36px;
     line-height: 115%;
     text-transform: uppercase;
+}
+
+.mobile-nav {
+    display: none;
 }
 
 header {
@@ -179,6 +256,7 @@ button {
     display: block;
     width: 100%;
     height: 100%;
+    border-radius: 40px;
 }
 
 .about-desc {
@@ -277,11 +355,13 @@ button {
 
 .instructors {
     margin-top: 120px;
+    margin-bottom: 56px;
 }
 
 .instructors img {
     display: block;
     width: 100%;
+    border-radius: 40px;
 }
 
 .instructors > div {
@@ -345,18 +425,18 @@ button {
 }
 
 .services-dec {
-    position: relative;
+    padding: 80px 40px 0;
+    background-image: url("assets/man.jpg");
+    background-size: cover;
+    border-radius: 40px;
 }
 .services-dec > div {
-    position: absolute;
-    top: 40px;
-    left: 50px;
-    right: 50px;
     color: #fff;
 }
 .services-dec h4 {
-    margin-bottom: 50px;
+    margin-bottom: 32px;
     font-size: 30px;
+    line-height: 115%;
 }
 .services-dec p {
     margin-bottom: 12px;
@@ -373,12 +453,6 @@ button {
 }
 .services-dec button:active {
     background: rgba(255, 255, 255, 0.4);
-}
-.services-dec img {
-    width: 100%;
-    height: 100%;
-    border-radius: 40px;
-    filter: brightness(60%);
 }
 
 .opacity {
@@ -550,10 +624,16 @@ button {
 }
 
 .footer-social {
+    display: flex;
+    justify-content: space-between;
     padding-top: 12px;
     line-height: 150%;
     font-weight: 200;
     border-top: 1px solid #fff;
+}
+.footer-social > div {
+    display: flex;
+    gap: 10px;
 }
 
 .map iframe {
@@ -563,6 +643,26 @@ button {
 @media screen and (min-width: 320px) and (max-width: 480px) {
     button {
         border: 1px solid #042261;
+    }
+    header nav {
+        display: none;
+    }
+    .mobile-nav {
+        margin-bottom: 16px;
+        padding-bottom: 3px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid  rgba(0,0,0,0.7);
+    }
+    .mobile-nav > div {
+        display: flex;
+        gap: 8px;
+    }
+    .mobile-nav p {
+        font-size: 18px;
+        text-transform: uppercase;
+        line-height: 150%;
+        font-weight: 500;
     }
     .container {
         width: 100%;
@@ -574,7 +674,7 @@ button {
         left: 16px;
     }
     .header-info .btn-reserve {
-        bottom: 10px;
+        bottom: 16px;
         left: 16px;
     }
     h1 {
@@ -604,6 +704,9 @@ button {
     .header-info div p:last-child {
         margin-top: 8px;
         font-size: 8px;
+    }
+    .header-info img {
+        border-radius: 10px;
     }
     .about {
         margin-top: 60px;
@@ -677,6 +780,9 @@ button {
         width: 100%;
         border-radius: 20px;
     }
+    .advantages-title br {
+        display: none;
+    }
     .advantages-title {
         margin-bottom: 8px;
         font-size: 16px;
@@ -684,7 +790,11 @@ button {
     .advantages-desc {
         font-size: 14px;
     }
+    .instructors img {
+        border-radius: 20px;
+    }
     .instructors {
+        margin-bottom: 24px;
         margin-top: 60px;
     }
     .instructors > div {
@@ -732,10 +842,9 @@ button {
         line-height: 150%;
         font-size: 12px;
     }
-    .services-dec img {
+    .services-dec {
         border-radius: 20px;
-        object-fit: cover;
-        height: 213px;
+        padding: 40px 20px;
     }
     .services-additional {
         flex-direction: column;
@@ -771,6 +880,7 @@ button {
         object-fit: cover;
         height: 406px;
         width: 100%;
+        border-radius: 20px;
     }
     .inventory-block p {
         font-size: 14px;
@@ -829,6 +939,12 @@ button {
     .footer-social p {
         font-size: 8px;
     }
+    .footer-social img {
+        width: 14px;
+    }
+    .footer-social > div {
+        gap: 8px;
+    }
     .address {
         font-size: 8px;
         gap: 8px;
@@ -863,6 +979,11 @@ button {
     header a {
         font-size: 12px;
         padding: 9px 13px;
+    }
+    .header-info img {
+        object-fit: cover;
+        height: 569px;
+        border-radius: 40px;
     }
     h1 {
         font-size: 58px;
@@ -932,7 +1053,7 @@ button {
         margin: 96px 0 52px;
     }
     .services-dec h4 {
-        margin-bottom: 48px;
+        margin-bottom: 32px;
     }
     .services-dec button {
         margin-top: 14px;
@@ -1015,6 +1136,11 @@ button {
         width: 100%;
         max-width: 1280px;
     }
+    .header-info img {
+        object-fit: cover;
+        height: 569px;
+        border-radius: 40px;
+    }
     h1 {
         font-size: 74px;
         letter-spacing: -2px;
@@ -1026,10 +1152,17 @@ button {
         object-fit: cover;
         width: 195px;
         height: 120px;
+        border-radius: 20px;
     }
     .services-dec img {
         object-fit: cover;
         height: 403px;
+    }
+    .services-price {
+        gap: 16px;
+    }
+    .services-block h4, .services-dec h4 {
+        font-size: 36px;
     }
     .independent {
         padding: 37px;
@@ -1057,6 +1190,12 @@ button {
         letter-spacing: 1px;
     }
 
+    .advantages-card img {
+        object-fit: cover;
+        width: 233px;
+        height: 138px;
+        border-radius: 20px;
+    }
     .advantages-desc span {
         display: inline;
     }
@@ -1069,6 +1208,11 @@ button {
 
     .inventory-block br {
         display: none;
+    }
+    .inventory-block img {
+        object-fit: cover;
+        width: 360px;
+        height: 528px;
     }
 
     .services-main {

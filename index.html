@@ -6,19 +6,16 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Траектория</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="assets/fonts/roboto.css">
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <header>
             <nav>
-                <picture>
-                    <source media="(min-width: 800px)" srcset="assets/logo.svg">
-                    <source media="(max-width: 600px)" srcset="assets/logo-small.svg">
-                    <img src="assets/logo.svg" alt="logo">
-                </picture>
+                <img src="assets/logo.svg" alt="logo">
                 <ul class="nav-web">
                     <li><a href="#about">О клубе</a></li>
                     <li><a href="#instructors">Инструкторы</a></li>
@@ -29,14 +26,20 @@
                 </ul>
             </nav>
 
+            <div class="mobile-nav">
+                <div>
+                    <img src="assets/logo-small.svg" alt="logo">
+                    <p>Траектория</p>
+                </div>
+                <img src="assets/menu.svg" alt="menu">
+            </div>
+
             <h1>Первый клуб стрельбы из лука</h1>
 
             <div class="header-info">
                 <picture>
                     <source media="(min-width: 1680px)" srcset="assets/main.svg">
-                    <source media="(min-width: 1280px)" srcset="assets/main1280.svg">
-                    <source media="(min-width: 1024px)" srcset="assets/main2.svg">
-                    <source media="(max-width: 600px)" srcset="assets/main-small.svg">
+                    <source media="(max-width: 600px)" srcset="assets/main-small.jpg">
                     <img src="assets/main.svg" alt="main photo">
                 </picture>
                 <div class="header-desc">
@@ -57,7 +60,7 @@
                     <div class="about-desc">
                         <h3>Траектория</h3>
                         <div class="line"></div>
-                        <p>Наши двери открыты для любителей лука <br> и арбалета, а также для новичков, желающих стать мастерами стрельбы</p>
+                        <p>Наш клуб - это идеальное место для тех, кто хочет интересно и активно провести время, научиться чему-то новому или просто получить заряд положительных эмоций</p>
                         <div class="about-btn">
                             <button class="btn-medium btn-blue">Забронировать</button>
                             <a href="#services"><button class="btn-medium btn-white">Узнать цену</button></a>
@@ -65,8 +68,8 @@
                     </div>
                     <div class="about-img">
                         <picture>
-                            <source media="(max-width: 1680px)" srcset="assets/about2.svg">
-                            <img src="assets/about.svg" alt="Фото лука">
+                            <source media="(max-width: 1680px)" srcset="assets/about2.jpg">
+                            <img src="assets/about.jpg" alt="Фото лука">
                         </picture>
                     </div>
                 </div>
@@ -76,7 +79,7 @@
                 <h2>Наши <br> преимущества</h2>
                 <div>
                     <div class="advantages-card">
-                        <img src="assets/coach.svg" alt="Профессиональные тренера">
+                        <img src="assets/coach.jpg" alt="Профессиональные тренера">
                         <div>
                             <p class="advantages-title">Профессиональные инструкторы</p>
                             <p class="advantages-desc">Обладают глубокими знаниями о технике <br>
@@ -84,7 +87,7 @@
                         </div>
                     </div>
                     <div class="advantages-card">
-                        <img src="assets/safety.svg" alt="Безопасная среда и комфорт">
+                        <img src="assets/safety.jpg" alt="Безопасная среда и комфорт">
                         <div>
                             <p class="advantages-title">Безопасная среда и комфорт</p>
                             <p class="advantages-desc">Соблюдаем строгие правила безопасности <br> во время занятий <span>,
@@ -93,39 +96,19 @@
                         </div>
                     </div>
                     <div class="advantages-card">
-                        <img src="assets/bows.svg" alt="Большой выбор луков">
+                        <img src="assets/bows.jpg" alt="Большой выбор луков">
                         <div>
                             <p class="advantages-title">Большой выбор <br> луков</p>
                             <p class="advantages-desc">Разнообразие луков позволяет подобрать оптимальный вариант <span>для каждого посетителя нашего клуба. Подходящий лук способствует достижению лучших результатов</span></p>
                         </div>
                     </div>
                     <div class="advantages-card">
-                        <img src="assets/levels.svg" alt="Для всех уровней">
+                        <img src="assets/levels.jpg" alt="Для всех уровней">
                         <div>
                             <p class="advantages-title">Программа для всех уровней</p>
                             <p class="advantages-desc">Программа рассчитана на стрелков разных уровней <span> -
                                 от начинающих до опытных. Индивидуальное внимание и подход к каждому посетителю клуба </span></p>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="instructors" id="instructors">
-                <h2>Инструкторы</h2>
-                <div>
-                    <div class="instructors-block">
-                        <p>Иван Иванов</p>
-                        <picture>
-                            <source media="(max-width: 1680px)" srcset="assets/about2.svg">
-                            <img src="assets/about.svg" alt="Инструктор">
-                        </picture>
-                    </div>
-                    <div class="instructors-block">
-                        <p>Петя Петров</p>
-                        <picture>
-                            <source media="(max-width: 1680px)" srcset="assets/about2.svg">
-                            <img src="assets/about.svg" alt="Инструктор">
-                        </picture>
                     </div>
                 </div>
             </div>
@@ -171,7 +154,7 @@
                         </div>
                     </div>
                     <div class="services-dec">
-                        <img src="assets/man.svg" alt="man" class="arrow-add">
+
                         <div>
                             <h4>В стоимость входит</h4>
                             <p>1. Инструктаж (входит в указанное время <br> и занимает 7-10 минут)</p>
@@ -297,6 +280,26 @@
                 </div>
             </div>
 
+            <div class="instructors" id="instructors">
+                <h2>Инструкторы</h2>
+                <div>
+                    <div class="instructors-block">
+                        <p>Иван Иванов</p>
+                        <picture>
+                            <source media="(max-width: 1680px)" srcset="assets/about2.jpg">
+                            <img src="assets/about.jpg" alt="Инструктор">
+                        </picture>
+                    </div>
+                    <div class="instructors-block">
+                        <p>Петя Петров</p>
+                        <picture>
+                            <source media="(max-width: 1680px)" srcset="assets/about2.jpg">
+                            <img src="assets/about.jpg" alt="Инструктор">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+
             <div class="independent">
                 <h4>Самостоятельная стрельба со своим инвентарем 1 час 800 ₽</h4>
             </div>
@@ -305,24 +308,24 @@
                 <h2>Инвентарь</h2>
                 <div>
                     <div class="inventory-block">
-                        <img src="assets/teen.svg" alt="Тренировочный лук">
+                        <img src="assets/teen.jpg" alt="Тренировочный лук">
                         <p class="inventory-title">Тренировочный лук</p>
                         <p>Стрелять из такого лука легко <br>
                             и удобно. Подходит как для детей,
                             так и для девушек</p>
                     </div>
                     <div class="inventory-block">
-                        <img src="assets/classic-plastic.svg" alt="Классический лук">
+                        <img src="assets/classic-plastic.jpg" alt="Классический лук">
                         <p class="inventory-title">Классический лук</p>
                         <p>Пригоден для любителей стрельбы <br> и для соревнований. Сила натяжении 12 кг</p>
                     </div>
                     <div class="inventory-block">
-                        <img src="assets/premium.svg" alt="Классический лук">
+                        <img src="assets/premium.jpg" alt="Классический лук">
                         <p class="inventory-title">Классический лук</p>
                         <p>Пригоден для любителей стрельбы <br> и для соревнований. Сила натяжении до 18 кг</p>
                     </div>
                     <div class="inventory-block">
-                        <img src="assets/crossbow.svg" alt="Арбалет">
+                        <img src="assets/crossbow.jpg" alt="Арбалет">
                         <p class="inventory-title">Арбалет</p>
                         <p>Для профессиональной <br> и развлекательной стрельбы. Сила натяжения нити до 18 кг</p>
                     </div>
@@ -332,12 +335,7 @@
             <div class="photo" id="photo">
                 <h2>Фотографии клуба</h2>
                 <div>
-                    <img src="assets/girl.svg" alt="photo">
-                    <img src="assets/girl.svg" alt="photo">
-                    <img src="assets/girl.svg" alt="photo">
-                    <img src="assets/girl.svg" alt="photo">
-                    <img src="assets/girl.svg" alt="photo">
-                    <img src="assets/girl.svg" alt="photo">
+
                 </div>
             </div>
 
@@ -373,6 +371,11 @@
                     </div>
                     <div class="footer-social">
                         <p>2024 Стрелковый клуб ТРАЕКТОРИЯ</p>
+                        <div>
+                            <a target="_blank" href="https://www.instagram.com/traektoriya39?igsh=MWc0Z3c2dmcwd2owcQ%3D%3D&utm_source=qr"><img src="assets/instagram.svg" alt="instagram"></a>
+                            <a target="_blank" href="https://vk.com/club225305512"><img src="assets/vk.svg" alt="vk"></a>
+                            <a target="_blank" href="https://wa.me/79814605194?text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C!%20%F0%9F%91%8B%20%D0%A5%D0%BE%D1%82%D0%B5%D0%BB%D0%B8%20%D0%B1%D1%8B%20%D0%BF%D0%BE%D1%81%D0%B5%D1%82%D0%B8%D1%82%D1%8C%20%D0%BB%D1%83%D1%87%D0%BD%D0%BE-%D0%B0%D1%80%D0%B1%D0%B0%D0%BB%D0%B5%D1%82%D0%BD%D1%8B%D0%B9%20%D0%BA%D0%BB%D1%83%D0%B1%20%22%D0%A2%D1%80%D0%B0%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D1%8F%22.%20%D0%9A%D0%B0%D0%BA%D0%B8%D0%B5%20%D0%B5%D1%81%D1%82%D1%8C%20%D1%81%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4%D0%BD%D1%8B%D0%B5%20%D0%BE%D0%BA%D0%BE%D1%88%D0%BA%D0%B8%20%D0%BD%D0%B0%20%D1%81%D0%B5%D0%B3%D0%BE%D0%B4%D0%BD%D1%8F%3F"><img src="assets/whatsapp.svg" alt="whatsapp"></a>
+                        </div>
                     </div>
                 </div>
             </div>

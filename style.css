@@ -666,7 +666,6 @@ button {
     }
     .container {
         width: 100%;
-        max-width: 320px;
         padding: 20px;
     }
     .header-info .header-desc {
@@ -693,7 +692,7 @@ button {
     }
     .btn-large, .btn-medium {
         padding: 10px 23px;
-        font-size: 8px;
+        font-size: 10px;
     }
     .nav-web {
         display: none;
@@ -703,10 +702,10 @@ button {
     }
     .header-info div p:last-child {
         margin-top: 8px;
-        font-size: 8px;
+        font-size: 10px;
     }
     .header-info img {
-        border-radius: 10px;
+        border-radius: 20px;
     }
     .about {
         margin-top: 60px;
@@ -716,9 +715,8 @@ button {
         margin-top: 32px;
     }
     .about-desc p {
-        width: 214px;
         margin: 14px 0 20px;
-        font-size: 8px;
+        font-size: 10px;
     }
     .about-desc br {
         display: inline;
@@ -746,7 +744,7 @@ button {
     }
     .services-dec p {
         margin-bottom: 8px;
-        font-size: 8px;
+        font-size: 10px;
     }
     .services-dec button {
         width: 100%;
@@ -830,7 +828,6 @@ button {
         margin-bottom: 6px;
     }
     .services-dec > div {
-        width: 240px;
         top: 40px;
         left: 20px;
     }
@@ -875,6 +872,7 @@ button {
     .inventory > div {
         grid-template-columns: 1fr;
         margin: 32px 0 60px;
+        gap: 32px;
     }
     .inventory-block img {
         object-fit: cover;
@@ -922,7 +920,6 @@ button {
         font-size: 16px;
     }
     .footer > div {
-        max-width: 280px;
         flex-direction: column;
     }
     .footer-info {
@@ -937,7 +934,7 @@ button {
         gap: 20px;
     }
     .footer-social p {
-        font-size: 8px;
+        font-size: 10px;
     }
     .footer-social img {
         width: 14px;
@@ -946,12 +943,12 @@ button {
         gap: 8px;
     }
     .address {
-        font-size: 8px;
+        font-size: 10px;
         gap: 8px;
     }
     .requisites {
         margin-top: 32px;
-        font-size: 8px;
+        font-size: 10px;
         line-height: 150%;
     }
     .map {
@@ -961,6 +958,67 @@ button {
     }
     .footer-social {
         padding-top: 4px;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 480px) {
+    .mobile-nav p {
+        font-size: 22px;
+    }
+    h1 {
+        font-size: 21px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    .header-info div p:first-child {
+        font-size: 14px;
+    }
+    .header-info div p:last-child {
+        font-size: 10px;
+    }
+    .btn-large, .btn-medium {
+        padding: 10px 27px;
+        font-size: 10px;
+    }
+    .about-desc p {
+        font-size: 10px;
+    }
+    .about-img img {
+        height: 227px;
+    }
+    .services-title {
+        font-size: 18px;
+    }
+    .services-block h4 {
+        font-size: 20px;
+    }
+    .price p {
+        font-size: 16px;
+    }
+    .services-dec h4 {
+        font-size: 20px;
+    }
+    .services-dec p {
+        font-size: 12px;
+    }
+    .independent h4 {
+        font-size: 14px;
+    }
+    .inventory-block .inventory-title {
+        font-size: 24px;
+    }
+    .inventory-block p {
+        font-size: 20px;
+    }
+    .footer h6 {
+        font-size: 24px;
+    }
+    .address p, .requisites p {
+        font-size: 11px;
+    }
+    .footer-social p {
+        font-size: 11px;
     }
 }
 
@@ -1008,7 +1066,7 @@ button {
         padding: 0 40px;
     }
     .about-desc p {
-        font-size: 15px;
+        font-size: 14px;
     }
     .advantages {
         margin-top: 96px;
